@@ -5,7 +5,7 @@ import DataTable, { createTheme } from 'react-data-table-component';
 import * as RiIcons from "react-icons/ri";
 import moment from "moment"
 
-const DataTableForWeek = () => {
+const DataTableForWeek = ({setWaterConsumption}) => {
 
 
     const [data, setData] = useState([])
@@ -32,6 +32,15 @@ const DataTableForWeek = () => {
 
     }
     useEffect(() => { getChartData() }, [])
+    var element=0;
+    useEffect(() => {
+        console.log("apidatastates", data);
+        for (let i = 0; i < data.length; i++) {
+            element = element + data[i];
+        }
+        console.log("addition",element);
+        setWaterConsumption(element)
+    }, [data])
 
 
     createTheme('solarized', {

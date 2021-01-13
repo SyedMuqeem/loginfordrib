@@ -489,7 +489,7 @@ hr.divider {
     padding: 10px;
     background-color: #494950;
     min-width: 300px;
-    height: 730px;
+    height: 560px;
   }
   .barwaterflex1{
     flex: 0.5;
@@ -511,21 +511,16 @@ hr.divider {
   .cardWaterManbutton{
     background-color: none;
   }
-  .cardWaterManbutton1{
-    outline: none;
-    border-radius: 5px;
-    color: rgb(0, 238, 238);
-    background-color: rgb(104, 99, 104);
-  }
+  
   .cardWaterManRupees{
     font-size: 40px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border-bottom: 0.25px solid rgb(197, 197, 197);
+    padding-top: 15%;
   }
   .cardWaterManRupees span{
     font-size: 25px;
@@ -535,8 +530,93 @@ hr.divider {
     display: flex;
     justify-content: space-between;
   }
+
+  .toogleForWaterManag{
+    height: 30px;
+    width:60px;
+    background-color: #3b3b3b;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .toogleForWaterManagCircle{
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: teal;
+      border: 3px solid rgb(255, 255, 255);
+  }
+  .footercompo{
+    color: rgb(218, 218, 218);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .footercompo span{
+    color: teal;
+    padding: 0 10px;
+  }
+  .allcards{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+  }
+  .card1{
+    flex: 1;
+    border-radius: 8px;
+    height: 180px;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .cardbg1{
+    background-image: linear-gradient(80deg,rgb(140, 0, 255),rgb(89, 80, 214),rgb(151, 151, 235));
+  }
+  .cardbg2{
+    background-image: linear-gradient(50deg,rgb(253, 0, 0),rgb(221, 60, 60),rgb(247, 140, 0));
+    margin: 0 20px;
+  }
+  .cardbg3{
+    background-image: linear-gradient(50deg,rgb(230, 48, 124),rgb(223, 79, 139),rgb(241, 151, 135));
+    margin-right: 20px;
+  }
+  .cardbg4{
+    background-image: linear-gradient(50deg,rgb(60, 200, 255),rgb(0, 180, 252),rgb(0, 180, 252));
+  }
+    .card1top{
+      flex: 1;
+      display: flex;
+    }
+    .card1bottom{
+      flex: 1;
+    }
+      .card1left{
+        flex: 1;
+      }
+      .card1right{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 40px;
+      }
+
+  .dropdownForHealth{
+   display: flex;
+   justify-content: flex-end;
+  }
   .samole{
-    color: #dae5ec;
+    color: #f0bd32;
   }
   
   
@@ -568,22 +648,29 @@ hr.divider {
       padding: 3px 10px;
       border-radius: 5px;
       margin-left: 200px;
-  }
-  .chartsfusion {
-    padding-right: 20px ;
-}
-  .tooglerow {
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.profilepageright {
-  padding-left: 20px;
-  padding-bottom: 37px;
-}
-.cardWaterManFooter1{
-  margin-right: 50px;
-}
+    }
+        .chartsfusion {
+          padding-right: 20px ;
+      }
+        .tooglerow {
+          display: flex;
+          margin-left: 30px;
+          margin-right: 30px;
+      }
+      .profilepageright {
+        padding-left: 20px;
+        padding-bottom: 37px;
+      }
+      .cardWaterManFooter1{
+        margin-right: 50px;
+      }
+      .toggleInWater{
+        margin-left: -50px;
+      }
+      .cardbg3{
+        margin-left: 0;
+        margin-right: 0;
+      }
   }
 
 
@@ -610,12 +697,28 @@ hr.divider {
       margin-left: 0;
       margin-bottom: 20px;
       width: 100%;
-
-
-    }
+     }
     .cardWaterManFooter1{
       margin-right: 60px;
     }
+    .cardWaterManRupees{
+      padding-top: 0;
+    }
+    .toggleInWater{
+      margin-left: -50px;
+    }
+    .card1{
+      margin-bottom: 20px;
+    }
+    .cardbg2{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .cardbg3{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
   }
 
 
@@ -689,13 +792,13 @@ hr.divider {
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
-  border-radius: 5px;
+  border-radius: 0px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(168, 168, 168); 
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: inset 0 0 5px rgb(82, 82, 82);
 }
 

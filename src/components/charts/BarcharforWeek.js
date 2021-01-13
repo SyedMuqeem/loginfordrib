@@ -6,7 +6,7 @@ import moment from "moment"
 
 
 
-const BarChartForWeek = () => {
+const BarChartForWeek = ({setWaterConsumption}) => {
 
 
     const [data, setData] = useState([])
@@ -32,6 +32,15 @@ const BarChartForWeek = () => {
 
     }
     useEffect(() => { getChartData() }, [])
+    var element=0;
+    useEffect(() => {
+        console.log("apidatastates", data);
+        for (let i = 0; i < data.length; i++) {
+            element = element + data[i];
+        }
+        console.log("addition",element);
+        setWaterConsumption(element)
+    }, [data])
 
     // time convert and map
     const timesofday = (datatime) => {

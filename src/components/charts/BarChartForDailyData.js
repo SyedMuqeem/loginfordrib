@@ -6,15 +6,13 @@ import moment from "moment"
 
 
 
-const BarChartForDailyData = () => {
+const BarChartForDailyData = ({setWaterConsumption}) => {
 
 
     const [data, setData] = useState([])
     const [datatime, setDatatime] = useState([])
-    // const addition = () =>{
-    //     var a=0
-    //     return{ a = data+a}
-    // }
+
+
     const getChartData = async () => {
         try {
             const data = await axios.put(
@@ -23,12 +21,9 @@ const BarChartForDailyData = () => {
                 "userid": ReactSession.get("userid")
             }
             );
-            console.log("api chart3", data.data);
+            console.log("api BarChartForDailyData", data.data);
             setData(data.data?.values)
             setDatatime(data.data?.x_axis_start);
-
-            console.log("apidata", data.data?.values);
-            // console.log(data.map(addition));
 
 
         } catch (e) {
@@ -37,8 +32,14 @@ const BarChartForDailyData = () => {
 
     }
     useEffect(() => { getChartData() }, [])
+    var element=0;
     useEffect(() => {
         console.log("apidatastates", data);
+        for (let i = 0; i < data.length; i++) {
+            element = element + data[i];
+        }
+        console.log("addition",element);
+        setWaterConsumption(element)
     }, [data])
 
     // time convert and map

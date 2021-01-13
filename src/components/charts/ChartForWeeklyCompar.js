@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Chart from "react-apexcharts";
 import { ReactSession } from 'react-client-session';
 
-const ChartForWeeklyCompar = () => {
+const ChartForWeeklyCompar = ({setWaterConsumption}) => {
     const [values, setValues] = useState([])
     const [lastValues, setLastValues] = useState([])
     const [xAxisValue, setXAxisValue] = useState([])
@@ -28,6 +28,15 @@ const ChartForWeeklyCompar = () => {
 
     }
     useEffect(() => { getChartData() }, [])
+    // var element=0;
+    // useEffect(() => {
+    //     console.log("apidatastates", values);
+    //     for (let i = 0; i < values.length; i++) {
+    //         element = element + values[i];
+    //     }
+    //     console.log("addition",element);
+    //     setWaterConsumption(element)
+    // }, [values])
 
 
     var series = [

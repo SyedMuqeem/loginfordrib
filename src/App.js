@@ -20,6 +20,7 @@ import ApexChart2 from './Screens/ApexChart2';
 import ConnectMqtt from './components/mqtt/ConnectMqtt';
 import ApexChart3 from './Screens/ApexChart3';
 import WaterManagementDetail from './Screens/WaterManagementDetail';
+import ProductHealth from './Screens/ProductHealth';
 // 
 
 
@@ -60,6 +61,9 @@ function App(props) {
                               </Route>
                               <Route exact path="/buildingAdmin/flatLink">
                                     <WaterManagementDetail/>
+                              </Route>
+                              <Route exact path="/history/yearView">
+                                    <ProductHealth/>
                               </Route>
 
                         
