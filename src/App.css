@@ -615,8 +615,123 @@ hr.divider {
    display: flex;
    justify-content: flex-end;
   }
+  .devicelistsRow{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .devicelist{
+    flex: 1;
+    height: 100%;
+    background-color: #494950;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .deviceDetails{
+    flex: 0.5;
+    width: 100%;
+    background-color: #494950;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .deviceDetailsHeader{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .deviceDetailsRow{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.25px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    color: rgb(161, 161, 161);
+    padding: 10px;
+  }
+  .statsRow{
+    display: flex;
+    margin-top: 40px;
+    height: 500px;
+    flex-wrap: wrap;
+  }
+  .charging{
+    flex: 0.5;
+    background-color: #494950;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: teal;
+  }
+  .powerLog{
+    flex: 1;
+    background-color: #494950;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+  }
+  .powerLog hr{
+    border: 0.5px solid grey;
+  }
+  .powerlogStatDetails{
+    height: 20px;
+    display: flex;
+    color: teal;
+    font-size: 20px;
+  }
+  .powerlogDetailsrow1{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .powerlogDetailsrow2{
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .powerlogDetailsrow3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .powerlogDetailsrow4{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .powerlogDetailsrow5{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chargingCircle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+  }
   .samole{
-    color: #f0bd32;
+    color: rgb(190, 189, 189);
   }
   
   
@@ -717,6 +832,25 @@ hr.divider {
     .cardbg3{
       margin-left: 0;
       margin-right: 0;
+    }
+    .devicelist{
+      width: 100%;
+      height: 100%;
+    }
+    .deviceDetails{
+      flex: 1;
+      margin-top: 20px;
+    }
+    .statsRow{
+      height: 100%;
+    }
+    .charging{
+      margin-bottom: 20px;
+      flex: 1;
+      margin-right: 0;
+    }
+    .powerlogStatDetails{
+      height: 100%;
     }
     
   }
