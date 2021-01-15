@@ -114,7 +114,7 @@ const DataTableForMonth = ({setWaterConsumption}) => {
                 highlightOnHover={true}
                 pointerOnHover={true}
                 responsive={true}
-                overflowY={true}
+                overflowYOffset={true}
                 pagination={true}
                 fixedHeader={true}
             />

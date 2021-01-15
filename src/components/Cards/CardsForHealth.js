@@ -38,14 +38,14 @@ const CardsForHealth = ({macAddress}) => {
 
     return (
         <div className="allcards">
-            <div className="card1 cardbg1">
+            <div className="card1 cardbg1 ">
                 <div className="card1top">
                     <div className="card1left"><h2><b>{cardDetails.currentlyPowered}</b></h2><br />Currently Powered</div>
                     <div className="card1right" style={{fontSize:"100px"}}><WiEarthquake/></div>
                 </div>
                 <div className="card1bottom"></div>
             </div>
-            <div className="card1 cardbg2">
+            <div className="card1 cardbg2 cardipad">
                 <div className="card1top">
                     <div className="card1left"><h5><b>{moment(cardDetails.lastCommunicated).format('MMMM Do YYYY, h:mm:ss a')}</b></h5><br />Last Communicated</div>
                     <div className="card1right"style={{fontSize:"80px"}}><FaCalendarAlt/></div>
@@ -59,7 +59,7 @@ const CardsForHealth = ({macAddress}) => {
                 </div>
                 <div className="card1bottom"></div>
             </div>
-            <div className="card1 cardbg4">
+            <div className="card1 cardbg4 cardipad">
                 <div className="card1top">
                     <div className="card1left"><h2><b>{cardDetails.tempHumidity}</b></h2><br />Temperature Humidity</div>
                     <div className="card1right" style={{fontSize:"80px"}}><FaTemperatureHigh/></div>

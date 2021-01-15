@@ -37,7 +37,7 @@ const ChargingStats = ({macAddress}) => {
                     <div style={{fontSize:'50px', color:"white"}}>{data.batteryStat}</div>
                     <div className="chargingCircle"><ImPower/></div>
                     <div style={{fontSize:'40px', color:"rgb(190, 189, 189)"}}>{data.powerMode}</div>
-                    <div style={{fontSize:'25px'}}>{moment(data.lastPowerSwitch).format('Do-MMM-YYYY, h:mm a')}</div>
+                    <div className="mb-3" style={{fontSize:'25px'}}>{moment(data.lastPowerSwitch).format('Do-MMM-YYYY, h:mm a')}</div>
         </div>
     )
 }

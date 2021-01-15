@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card } from 'react-bootstrap'
+import { Card,Button } from 'react-bootstrap'
 import BreadCrumbsForApp from '../breadcrums/BreadCrumbsForApp'
 import CardForWaterMansDet from '../Cards/CardForWaterMansDet'
 import BarChartForWeek from '../charts/BarcharforWeek'
@@ -75,9 +75,9 @@ const WaterMansDet = () => {
                 <div className="barwaterflex1 ">
                     <div className="cardWaterMan"><h3>WATER MANAGEMENT</h3></div>
                     <div className="cardWaterManbutton mt-4">
-                        <button className="cardWaterManbutton1" style={dispGraph === "day" ? ({ backgroundColor: '#f0bd32' }) : (null)} onClick={() => { setDispGraph("day") }}>Day</button>
-                        <button className="cardWaterManbutton1 ml-5 mr-5" style={dispGraph === "week" ? ({ backgroundColor: '#f0bd32' }) : (null)} onClick={() => { setDispGraph("week") }}>Week</button>
-                        <button className="cardWaterManbutton1" style={dispGraph === "month" ? ({ backgroundColor: '#f0bd32' }) : (null)} onClick={() => { setDispGraph("month") }}>Month</button>
+                        <Button  className="cardWaterManbutton1" style={dispGraph === "day" ? ({ backgroundColor: 'white', color:"rgb(68, 67, 67)" }) : (null)} onClick={() => { setDispGraph("day") }}>Day</Button >
+                        <Button  className="cardWaterManbutton1 ml-5 mr-5" style={dispGraph === "week" ? ({ backgroundColor: 'white', color:"rgb(68, 67, 67)"  }) : (null)} onClick={() => { setDispGraph("week") }}>Week</Button >
+                        <Button  className="cardWaterManbutton1" style={dispGraph === "month" ? ({ backgroundColor: 'white', color:"rgb(68, 67, 67)"  }) : (null)} onClick={() => { setDispGraph("month") }}>Month</Button >
                     </div>
                     <div className="cardWaterManRupees">
                         INR {n} <br />

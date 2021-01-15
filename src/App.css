@@ -573,7 +573,7 @@ hr.divider {
     flex: 1;
     border-radius: 8px;
     height: 180px;
-    min-width: 300px;
+    min-width: 260px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -731,7 +731,7 @@ hr.divider {
     color: white;
   }
   .samole{
-    color: rgb(190, 189, 189);
+    color: rgb(68, 67, 67);
   }
   
   
@@ -791,7 +791,7 @@ hr.divider {
 
 
 
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 541px) {
     .profilepagerighttop{
       margin: 5px 0 10px 0;
     }
@@ -808,10 +808,15 @@ hr.divider {
     .barGraph1inWater{
       padding: 0;
     }
+    .barwaterflex{
+      height: 100%;
+      width: 100%;
+    }
     .barwaterflex1{
       margin-left: 0;
       margin-bottom: 20px;
       width: 100%;
+      padding: 15px;
      }
     .cardWaterManFooter1{
       margin-right: 60px;
@@ -852,10 +857,26 @@ hr.divider {
     .powerlogStatDetails{
       height: 100%;
     }
+    .powerlogStatDetails{
+      font-size: 12px;
+    }
     
   }
 
-
+  @media only screen and (max-width: 280px) {
+    .powerlogStatDetails{
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .card1{
+      margin: 0;
+    }
+    .cardipad{
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
 .smallcircle{
   height: 40px;
   width: 40px;
