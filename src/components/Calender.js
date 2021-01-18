@@ -12,6 +12,7 @@ import AnotherviewForTable from './AnotherviewFortable';
 import Context from '../context/Context';
 // react session
 import { ReactSession } from "react-client-session"
+import Footer from './Footer/Footer';
 
 const Calender = ({ token, userid, fname, image }) => {
 
@@ -344,10 +345,10 @@ const Calender = ({ token, userid, fname, image }) => {
                 {/* <div>day {displayDayCalender ? ("true") : ("false")}</div> */}
 
                 {displayDayCalender ? (
-                    <Daycalender token={token} userid={userid} fname={fname} image={image} />
-                ) : (
-
                         <MonthViews token={ReactSession.get("token")} userid={ReactSession.get("userid")} />
+                    
+                ) : (
+                    <Daycalender token={token} userid={userid} fname={fname} image={image} />
 
 
 
@@ -362,6 +363,7 @@ const Calender = ({ token, userid, fname, image }) => {
                     )}
 
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -48,12 +48,11 @@ const Daycalender = (token,userid,fname,image) => {
 
                 const eventss = (monthlyData, index) => {
                     return(
-                        {title: monthlyData.title, date: moment(monthlyData.start).format('YYYY-MM-DD')}
+                        {title: monthlyData.title, date: moment(monthlyData[0]).format('YYYY-MM-DD')}
+                        // console.log({title: monthlyData.title, date: moment(monthlyData.start).format('YYYY-MM-DD')})
+                        // console.log({title: monthlyData.title, date: moment(monthlyData[0]).format('YYYY-MM-DD')})
 
-                        // `{title: ${ monthlyData.title},date:${moment(monthlyData.start).format('YYYY-MM-DD')} }`
                         
-                            // monthlyData.title,
-                            // moment(monthlyData.start).format("YYYY-MM-DD")
                         
                     )
                 }
@@ -70,12 +69,12 @@ const Daycalender = (token,userid,fname,image) => {
                  events = {[
 
 
-                    // (monthlyData.map(eventss))
+                    (monthlyData.map(eventss))
                     // {title: 'event 1', date: <Moment format="YYYY-MM-DD"> {time}</Moment>},
                 //     {title: liter, date: moment(time).format("YYYY-MM-DD")},
-                    {title: "event 14", date: '2021-01-15'},
-                    // {title: 'event 01', date: "2020-12-16"},
-                    // {title: 'event 02', date: "2020-12-19"},
+                    // {title: "event 14", date: '2021-01-15'},
+                    // {title: 'event 01', date: "2021-01-16"},
+                    // {title: 'event 02', date: "2021-01-19"},
                 ]}
             />
             {console.log("rizwan11",monthlyData.map(eventss))}
