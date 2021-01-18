@@ -21,6 +21,8 @@ import ConnectMqtt from './components/mqtt/ConnectMqtt';
 import ApexChart3 from './Screens/ApexChart3';
 import WaterManagementDetail from './Screens/WaterManagementDetail';
 import ProductHealth from './Screens/ProductHealth';
+import  YearView  from './Screens/YearView';
+import TenantView from './Screens/TenantView';
 // 
 
 
@@ -38,7 +40,7 @@ function App(props) {
                               <Route exact path="/history/monthView">
                                     <MainDashboard />
                               </Route>
-                              <Route exact path="/daycalender">
+                              <Route exact path="/buildingDetails">
                                     <Daycalender />
                               </Route>
                               <Route exact path="/buildingAdmin/billGenerator">
@@ -53,17 +55,24 @@ function App(props) {
                               <Route exact path="/buildingAdmin/invoices">
                                     <ApexChart2/>
                               </Route>
-                              <Route exact path="/buildingSpecific">
+                              <Route exact path="/tankerStats">
                                     <ConnectMqtt/>
                               </Route>
                               <Route exact path="/buildingAdmin/productSettings">
                                     <ApexChart3/>
                               </Route>
-                              <Route exact path="/buildingAdmin/flatLink">
+                              <Route exact path="/buildingSpecific">
                                     <WaterManagementDetail/>
                               </Route>
-                              <Route exact path="/history/yearView">
+                              <Route exact path="/productInfo">
                                     <ProductHealth/>
+                              </Route>
+                              
+                              <Route exact path="/history/yearView">
+                                    <YearView/>
+                              </Route>
+                              <Route exact path="/history/tenantView">
+                                    <TenantView/>
                               </Route>
 
                         

@@ -64,6 +64,9 @@ hr.divider {
   font-size: 10px;
   margin-top: 10px;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loginButton:hover{
   background-color: rgb(250, 153, 190);
@@ -464,6 +467,7 @@ hr.divider {
   }
   .waterManagment{
     padding: 20px;
+    min-height: 100vh;
     height: 100%;
     background-color: #2b2b4b;
   }
@@ -730,6 +734,48 @@ hr.divider {
     font-size: 50px;
     color: white;
   }
+  .yearCalender{
+    color: white;
+    margin-top: 50px;
+  }
+  .calenderCompo{
+    background-color: #494950;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  .calenderYear{
+    display: flex;
+    justify-content: center;
+  }
+  .yearcompo{
+    border: 0.5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .monthsInYearCompo{
+    flex: 1;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 10px;
+    border: 0.25px solid;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .monthsCal{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 0.25px solid white;
+  }
+  .monthlydata{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
   .samole{
     color: rgb(68, 67, 67);
   }
@@ -860,6 +906,10 @@ hr.divider {
     .powerlogStatDetails{
       font-size: 12px;
     }
+    /* .cardipad{
+      margin-left: 0;
+      margin-bottom: 0;
+    } */
     
   }
 
@@ -868,14 +918,17 @@ hr.divider {
       font-size: 10px;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (min-width:541px)  {
     .card1{
       margin: 0;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
-    .cardipad{
+    /* .cardipad{
       margin-left: 20px;
       margin-bottom: 20px;
-    }
+    } */
   }
 .smallcircle{
   height: 40px;
@@ -964,4 +1017,27 @@ hr.divider {
 
 .app{
   flex: 1;
+}
+
+/* loader */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid rgb(156, 156, 156);
+  border-bottom: 6px solid rgb(156, 156, 156);
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

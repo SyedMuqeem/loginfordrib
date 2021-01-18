@@ -20,14 +20,14 @@ const CardForWaterMansDet = () => {
                 </div>
                 <div className="card1bottom"></div>
             </div>
-            <div className="card1 cardbg3">
+            <div className="card1 cardbg3 ">
                 <div className="card1top">
                     <div className="card1left">82695.5<br />Last Month</div>
                     <div className="card1right"><FaServer/></div>
                 </div>
                 <div className="card1bottom"></div>
             </div>
-            <div className="card1 cardbg4">
+            <div className="card1 cardbg4 ">
                 <div className="card1top">
                     <div className="card1left">{moment(new Date()).format("Do MMM YY")}<br />Billing Cycle</div>
                     <div className="card1right"><FaCalendarAlt/></div>

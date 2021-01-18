@@ -51,7 +51,7 @@ const Submenu = ({item}) => {
     const showSubnav = () => setSubnav(!subnav)
     return(
         <>
-            <SidebarLink to="#" onClick={item.Smenu && showSubnav}>
+            <SidebarLink to={item.Smenu ? ('#')  : item.url } onClick={item.Smenu && showSubnav}>
                 <div>
                     {/* {item.icons} */}
                     <i className={item.icons}></i>

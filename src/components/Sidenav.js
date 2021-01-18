@@ -73,7 +73,7 @@ const Sidenav = () => {
                     "userid": ReactSession.get("userid"),
                     "type": "WEB"
                 })
-                console.log(data.data);
+                console.log("menuDetails",data.data);
                 console.log(ReactSession.get("userid"),ReactSession.get("token"));
                 setMenuDetails(data.data)
 
